@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="利用jQuery的CSS自定义选择器。" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+<meta charset="UTF-8">
+
+<title>CSS Selector Function With jQuery</title>
+
+</head>
+
+<body >
+
+<header>
+<h1 class="title_name">CSS Selector Function With <span>jQuery</span><small>by Sunflowa Media</small></h1>
+</header>
+
+<div id="container">
+
+<ul id="demo">
+<li>Text1</li>
+<li>Text2</li>
+<li>Text3</li>
+<li>Text4</li>
+<li>Text5</li>
+<li>Text6</li>
+<li>Text7</li>
+<li>Text8</li>
+<li>Text9</li>
+<li>Text10</li>
+</ul>
+
+</div>
+
+<div id="footer">
+<p><strong>Say Hello</strong>: Check out <a target="_blank" href="http://www.sunflowamedia.com/blog/">Sunflowa Media Blog</a>, for more tutorials! <span class="follow">And you may also <a target="_blank" href="http://weibo.com/sunflowamedia">@me</a> on sina microblog</span></p>
+</div>
+
+<!-- star javascript -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){	
+		jQuery.expr[':'].step = function(node,index,meta){
+		var $index = index;
+		var $meta = meta[3].toString().split(',');
+		var $step = parseInt($meta[0]);	
+		var $start = ($meta.length > 1) ? $meta[1] : 0;
+		if ($start != 0) $start -= 1;
+		return ( ( ($index-$start) / $step ) == Math.floor( ( ($index-$start) / $step ) ) && ( ($index-$start) >= 0 )  );	
+		};
+		//指定位置添加CSS样式"mo"
+		$("ul#demo li:step(3)").addClass("mo");
+	});
+</script>
+
+
+</body>
+
+</html>
