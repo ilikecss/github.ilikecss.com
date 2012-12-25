@@ -11,6 +11,19 @@
 
 <title>Tips For Fix Image Width With CSS</title>
 
+<style type="text/css">
+p.fix_img {
+    margin:0 15px 10px 0;
+	float:left;
+	display:inline;
+	box-shadow:1px 1px 2px #AAAAAA;
+	overflow:hidden;
+}
+p.fix_img img {
+	margin:0 -100px -45px -100px;
+}
+</style>
+
 </head>
 
 <body >
