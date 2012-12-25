@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+<meta charset="UTF-8">
+
+<title>Tips For Fix Image Width With CSS</title>
+
+</head>
+
+<body >
+
+<header>
+    <h1 class="title_name">Tips For Fix Image Width <span>CSS</span><small>by Sunflowa Media</small></h1>
+</header>
+
+<div id="container">
+
+<p class="fix_img">
+<img src="img/img1.jpg">
+</p>
+<p class="txt">2012年马上过去了，末日论也被推迟了，今年你的工资涨了吗？如果还是止步停留就要去思考下是否应该去转行卖切糕了。2012年的确发生太多变化和突破，这股巨大的能量推动许多设计、开发师去展望下一年的进步。去年底写过一篇文章展望2012年设计趋势，现在不妨回头看看2012年到底是否应验了这个展望趋势。<a href="http://sunflowamedia.com/blog/review-web-design-field-trends-2012/">http://sunflowamedia.com/blog/review-web-design-field-trends-2012/</a></p>
+
+</div>
+
+<div id="footer">
+<p><strong>Say Hello</strong>: Check out <a target="_blank" href="http://www.sunflowamedia.com/blog/">Sunflowa Media Blog</a>, for more tutorials! <span class="follow">And you may also <a target="_blank" href="http://weibo.com/sunflowamedia">@me</a> on sina microblog</span></p>
+</div>
+
+
+</body>
+
+</html>
