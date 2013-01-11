@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+<meta charset="UTF-8">
+
+<title>Simple jQuery Snippets</title>
+
+</head>
+
+<body id="anchor">
+
+<header>
+    <h1 class="title_name"><span>Simple jQuery Snippets</span><small>by Sunflowa Media</small></h1>
+</header>
+
+<div id="container">
+
+  <div class="thumbs">
+    <img src="img/mag_ph1.png">
+    <img src="img/mag_ph2.png">
+    <img src="img/mag_ph3.png">
+    </div>
+
+</div>
+
+<div id="footer">
+<p><strong>Say Hello</strong>: Check out <a target="_blank" href="http://www.sunflowamedia.com/blog/">Sunflowa Media Blog</a>, for more tutorials! <span class="follow">And you may also <a target="_blank" href="http://weibo.com/sunflowamedia">@me</a> on sina microblog</span></p>
+</div>
+
+<p class="pagetop"><a href="#anchor" class="topLink">Top</a></p>
+
+
+<div id="sakuraL"></div>
+
+<div id="sakuraR"></div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/leaves.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+$(".thumbs img").hover(function(){
+	$(this).fadeTo("slow", 0.5); // 60% on hover
+},function(){
+	$(this).fadeTo("slow", 1); // back to 100% on mouseout
+});
+	// Add Class To Body
+	$("body").addClass("classname");
+	//Back Page Top
+$("a.topLink").click(function() {
+	$("html, body").animate({
+		scrollTop: $($(this).attr("href")).offset().top + "px"
+	}, {
+		duration: 300,
+		easing: "swing"
+	});
+	return false;
+});
+	
+});
+
+
+</script>
+
+
+</body>
+
+</html>
