@@ -2,7 +2,7 @@ blog
 ====
 
 CSS/HTML Tutorials, jQuery Tutorials
-<a href="http://sunflowamedia.com/blog/">http://sunflowamedia.com/blog/</a>
+<a href="http://sunflowamedia.com/blog/">http://ilikecss.com/blog/</a>
 
 Demo
 ====
